@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app">
-      <!-- shell -->
-    </div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <style>
+    @keyframes opacity {
+      0% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .5
+      }
+
+      100% {
+        opacity: 1
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app">
+    <style>
+      ._ {
+        position: fixed;
+        z-index: 999;
+        background: #ecf0f2;
+        animation: opacity 1s linear infinite;
+        ;
+      }
+
+      .__ {
+        top: 0%;
+        left: 0%;
+        width: 100%;
+      }
+    </style>
+    <div class="_ __" style="height:100%;z-index:990;background:#fff"></div>
+    <div class="_" style="height:1.800%;top:3.800%;left:3.167%;width:93.667%"></div>
+    <div class="_" style="height:3.700%;top:10.744%;left:0.667%;width:98.667%"></div>
+    <div class="_" style="height:1.800%;top:16.587%;left:0.667%;width:98.667%"></div>
+    <div class="_" style="height:50.000%;top:19.988%;left:0.667%;width:41.667%"></div>
+    <div class="_" style="height:1.800%;top:42.388%;left:42.333%;width:7.115%"></div>
+    <div class="_" style="height:1.800%;top:45.787%;left:42.333%;width:7.115%"></div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
