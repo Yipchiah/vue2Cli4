@@ -37,3 +37,6 @@ See https://github.com/famanoder/dps
 ### notice
 项目暂时用的是 draw-page-structure, 外部生成skeleton后直接复制到index.html
 
+### 文件过大时切片上传
+用spark-md5生成文件唯一的hash值
+然后用file继承的blob的slice方法对文件进行分片
